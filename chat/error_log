@@ -1,0 +1,6 @@
+[17-May-2017 08:59:46 Asia/Jakarta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/herwinti/public_html/simice/chat/php/chat_realtime.php:22
+Stack trace:
+#0 /home/herwinti/public_html/simice/chat/php/chat_realtime.php(22): PDO->__construct('mysql:dbname=ch...', 'root', '')
+#1 /home/herwinti/public_html/simice/chat/api.php(7): Chat_realtime->__construct('chat_realtime', 'localhost', 'root', '')
+#2 {main}
+  thrown in /home/herwinti/public_html/simice/chat/php/chat_realtime.php on line 22

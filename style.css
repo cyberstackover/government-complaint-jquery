@@ -1,0 +1,64 @@
+
+body{
+	font-family:Segoe UI;
+	font-size:20px;
+	max-width:600px;
+	margin: 0 auto;
+}	
+
+
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	background:#00e5ff;
+}
+
+ul li {
+	display:block;
+	position:relative;
+	float:left;
+	background:#00e5ff;
+	box-shadow: 0 0 5px #00b8d4;
+}
+
+/*Hide sub menus*/
+li ul{
+	display:none;
+}
+
+ul li a {
+	display:block;
+	padding:1em;
+	padding-left:2em;
+	padding-right:2em;
+	text-decoration:none;
+	white-space:nowrap;
+	color:#fff;
+}
+
+ul li a:hover{
+	background:#00b8d4;
+}
+
+/*Disply the sub menus*/
+li:hover > ul{
+	display:block;
+	position:absolute;
+}
+
+li:hover li{
+	float:none;
+}
+
+.nav li ul li {
+	border-top:0;
+}
+
+/*Display second level items*/
+
+ul ul ul {
+	left:100%;
+	top:0;
+}
+
